@@ -1,0 +1,32 @@
+{
+  "name": "@recalllens/fetchers",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "fetch": "node dist/cli.js",
+    "fetch:fda": "node dist/cli.js --sources fda",
+    "fetch:fsis": "node dist/cli.js --sources fsis",
+    "fetch:cpsc": "node dist/cli.js --sources cpsc",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@recalllens/core": "workspace:*",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^11.1.0",
+    "date-fns": "^2.30.0",
+    "fs-extra": "^11.1.1",
+    "node-cron": "^3.0.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.0.0",
+    "@types/node-cron": "^3.0.8",
+    "typescript": "^5.0.0",
+    "vitest": "^0.34.6"
+  }
+}

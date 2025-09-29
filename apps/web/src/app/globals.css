@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500;
+  }
+  
+  .btn-success {
+    @apply bg-recall-green text-white hover:bg-green-600 focus:ring-green-500;
+  }
+  
+  .btn-warning {
+    @apply bg-recall-yellow text-white hover:bg-yellow-600 focus:ring-yellow-500;
+  }
+  
+  .btn-danger {
+    @apply bg-recall-red text-white hover:bg-red-600 focus:ring-red-500;
+  }
+  
+  .traffic-light {
+    @apply w-24 h-24 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg;
+  }
+  
+  .traffic-light-green {
+    @apply bg-recall-green;
+  }
+  
+  .traffic-light-yellow {
+    @apply bg-recall-yellow;
+  }
+  
+  .traffic-light-red {
+    @apply bg-recall-red;
+  }
+  
+  .camera-container {
+    @apply relative w-full h-96 bg-black rounded-lg overflow-hidden;
+  }
+  
+  .camera-overlay {
+    @apply absolute inset-0 pointer-events-none;
+  }
+  
+  .scan-frame {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-32 border-2 border-white rounded-lg;
+  }
+  
+  .scan-corners {
+    @apply absolute w-6 h-6 border-2 border-white;
+  }
+  
+  .scan-corner-tl {
+    @apply top-0 left-0 border-r-0 border-b-0;
+  }
+  
+  .scan-corner-tr {
+    @apply top-0 right-0 border-l-0 border-b-0;
+  }
+  
+  .scan-corner-bl {
+    @apply bottom-0 left-0 border-r-0 border-t-0;
+  }
+  
+  .scan-corner-br {
+    @apply bottom-0 right-0 border-l-0 border-t-0;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .backdrop-blur {
+    backdrop-filter: blur(4px);
+  }
+}
