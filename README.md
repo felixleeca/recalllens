@@ -1,8 +1,6 @@
 # RecallLens
 
-**"Scan it. If it's recalled, know in seconds."**
-
-RecallLens is a Progressive Web App that allows users to scan product barcodes and instantly check for recalls from official government sources (FDA, FSIS, CPSC).
+RecallLens is a web app that allows users to scan product barcodes and instantly check for recalls.
 
 ## Features
 
@@ -223,3 +221,4 @@ This tool provides informational recall data for convenience only. Always refer 
 - [CPSC](https://www.cpsc.gov/) for consumer product recall data
 - [@zxing/library](https://github.com/zxing-js/library) for barcode scanning
 - [Tesseract.js](https://tesseract.projectnaptha.com/) for OCR functionality
+
